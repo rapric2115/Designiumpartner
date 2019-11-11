@@ -1,0 +1,1033 @@
+<!doctype html>
+<html ⚡>
+    <head>
+        <meta charset="utf-8">
+        <title>Diseño y Desarrollo web | Designiumpartner</title>
+        <link rel="canonical" href="http://www.designiumpartner.com">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+        <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+        <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+        <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
+        <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
+        <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
+        <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+
+        <script async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
+        <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+       
+        <!-- Open Graph -->
+        <meta property="og:type" content="business.business">
+        <meta property="og:title" content="designium partner">
+        <meta property="og:url" content="http://www.designiumpartner.com">
+        <meta property="og:image" content="http://www.designiumpartner.com/images/designiumpartner.svg">
+        <meta property="business:contact_data:street_address" content="melvin jones #166">
+        <meta property="business:contact_data:locality" content="santo domingo">
+        <meta property="business:contact_data:region" content="distrito nacional">
+        <meta property="business:contact_data:postal_code" content="10147">
+        <meta property="business:contact_data:country_name" content="República Dominicana">
+
+        <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+        <!-- google verification code -->
+        <meta name="google-site-verification" content="8RIt0cXrbEtnfd433bH2yZtVBnnEerLZFunsutfti5A" />
+
+        <!-- google tag manager -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50070967-13"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-50070967-13');
+        </script>
+
+        <!-- Bing site tag - Bing Analytics -->
+        <meta name="msvalidate.01" content="C50A2E2ECAF370175D946B8BF60D4096" />
+
+        <!-- Schema Organization -->
+        <script type="application/ld+json">
+            { "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Designium Partner",
+            "legalName" : "RICHBAR GENERAL SOLUTIONS S.R.L",
+            "url": "http://www.designiumpartner.com",
+            "logo": "http://designiumpartner.com/images/designiumpartner-logo.svg",
+            "foundingDate": "2019",
+            "founders": [
+            {
+            "@type": "Person",
+            "name": "Raphael Richardson"
+            },
+            {
+            "@type": "Person",
+            "name": "Angely p. Aybar"
+            } ],
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Melvin Jones #166",
+            "addressLocality": "Evaristo Morales",
+            "addressRegion": "D. N.",
+            "postalCode": "10147",
+            "addressCountry": "D.R."
+            },
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "[+849-409-6892]",
+            "email": "raphael.richardson@gmail.com"
+            },
+            "sameAs": [ 
+            "http://www.twitter.com/rapric2115",
+            "https://sourcerer.io/rapric2115",
+            "http://www.linkedin.com/in/raprichardson",
+            "https://github.com/rapric2115"
+            ]}
+           </script>
+
+        <style amp-custom>
+            @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Poppins:400,600&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Seaweed+Script&display=swap');
+            :root {
+                --text-color-primary: #021425;
+                --bg: #fff;
+                --sidebar-bg: #38618C;
+                --font-primary: 'Fira Sans Extra Condensed', sans-serif;
+                --font-secundary: 'Poppins', sans-serif;
+                --font-script: 'Seaweed Script', cursive;
+                --text-white: #fff;
+                --icon: #808992;
+                --danger: #dc3545;
+                --danger-hover: #c82333;
+                --danger-border: #bd2130;
+                --danger-shadow: rgba(225, 83, 97, .5);
+                --danger-border-sec: #b21f2d;
+                --text-white: #fff;
+                --text-offert: #76E06E;
+            }
+            /*
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+            */
+            /* Navbar */
+            .ampstart-headerbar {
+                background-color: var(--bg);
+                z-index: 999;
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1)
+            }
+
+            .ampstart-headerbar+:not(amp-sidebar),
+            .ampstart-headerbar+amp-sidebar+* {
+                margin-top: 3.5rem
+            }
+
+            .ampstart-headerbar-nav .ampstart-nav-item {
+                padding: 0 1rem;
+                background: transparent;
+                opacity: .8
+            }
+            .ampstart-nav-item:active,
+            .ampstart-nav-item:focus,
+            .ampstart-nav-item:hover {
+                opacity: 1
+            }
+            .ampstart-nav-item {
+                font-family: var(--font-primary);
+                text-transform: uppercase;
+                letter-spacing: .1rem
+            }
+            .ampstart-headerbar-nav {
+                line-height: 3.5rem
+            }
+            .ampstart-headerbar {
+                background: var(--bg);
+                color: var(--text-color-primary);
+                padding-right: 1rem
+            }
+            .ampstart-headerbar .ampstart-nav-search:active,
+            .ampstart-headerbar .ampstart-nav-search:focus,
+            .ampstart-headerbar .ampstart-nav-search:hover {
+                box-shadow: none
+            }
+            .ampstart-headerbar .ampstart-nav-dropdown {
+                display: none
+            }
+            .fixed {
+                position: fixed
+            }
+            .flex {
+                display: -ms-flexbox;
+                display: flex
+            }
+            .justify-start {
+                -ms-flex-pack: start;
+                justify-content: flex-start
+            }
+            .items-center {
+                -ms-flex-align: center;
+                align-items: center
+            }
+            .top-0 {
+                top: 0
+            }
+            .left-0 {
+                left: 0
+            }
+            .right-0 {
+                right: 0
+            }
+            .pl2 {
+                padding-left: 1rem
+            }
+            .pr4 {
+                padding-right: 2.5rem
+            }
+            .pr2 {
+                padding-right: 1rem
+            }
+            .px3 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+            .p-3 {
+                padding: 1rem!important;
+            }
+            .p0 {
+                padding: 0
+            }
+            .my0 {
+                margin-top: 0;
+                margin-bottom: 0
+            }
+            .ml-auto,
+            .mx-auto {
+                margin-left: auto
+            }
+            .m0 {
+                margin: 0
+            }
+            .m1 {
+            	margin: .5rem
+            }
+            .mx-auto {
+                margin-right: auto
+            }
+            .mb4 {
+                margin-bottom: 2.5rem
+            }
+            .mt-2 {
+                margin-top: .5rem;
+            }
+            amp-timeago {
+                vertical-align: middle;
+            }
+            .ampstart-navbar-trigger {
+                font-size: 1.5rem
+            }
+            .ampstart-navbar-trigger:focus {
+                outline: none
+            }
+            .ampstart-nav a,
+            .ampstart-sidebar-faq a {
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--text-white);
+            }
+            .ampstart-navbar-trigger {
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--text-color-primary);
+            }
+            .ampstart-navbar-trigger {
+                line-height: 3.5rem;
+                font-size: 1.625rem
+            }
+            .ampstart-sidebar .ampstart-navbar-trigger {
+                line-height: inherit
+            }
+            .ampstart-navbar-trigger svg {
+                pointer-events: none
+            }
+            /* Sidebar */
+            .ampstart-sidebar {
+                background-color: var(--bg);
+                color: var(--text-color-primary);
+                min-width: 300px;
+                width: 300px
+            }
+            .ampstart-sidebar .ampstart-icon {
+                fill: var(--icon);
+            }
+            .ampstart-sidebar-header {
+                line-height: 3.5rem;
+                min-height: 3.5rem
+            }
+            .ampstart-sidebar .ampstart-dropdown-item,
+            .ampstart-sidebar .ampstart-dropdown header
+            .ampstart-sidebar .ampstart-nav-item,
+            .ampstart-sidebar .ampstart-social-follow {
+                margin: 0 0 2.5rem
+            }
+            .ampstart-dropdown header {
+                color: var(--text-white);
+            }
+            .ampstart-dropdown {
+                min-width: 200px
+            }
+            .ampstart-dropdown.absolute {
+                z-index: 100
+            }
+
+            .ampstart-dropdown.absolute>section,
+            .ampstart-dropdown.absolute>section>header {
+                height: 100%
+            }
+            
+            .ampstart-dropdown>section>header {
+                background-color: var(--bg);
+                border: 0;
+                color: var(--text-white);
+            }
+
+            .ampstart-dropdown>section>header:after {
+                display: inline-block;
+                content: "+";
+                padding: 0 0 0 1.5rem;
+                color: var(--icon);
+            }
+
+            .ampstart-dropdown>[expanded]>header:after {
+                content: "–"
+            }
+
+            .absolute .ampstart-dropdown-items {
+                z-index: 200
+            }
+
+            .ampstart-dropdown-item {
+                background-color: var(--bg);
+                color: var(--icon);
+                opacity: .9
+            }
+
+            .ampstart-dropdown-item:active,
+            .ampstart-dropdown-item:hover {
+                opacity: 1
+            }
+            .ampstart-sidebar .ampstart-nav-dropdown {
+                margin: 0
+            }
+            .ampstart-sidebar .ampstart-navbar-trigger {
+                line-height: inherit
+            }
+            /*.ampstart-sidebar .ampstart-nav-dropdown section header {
+                height: 0;
+                width: 0;
+                margin: 0
+            } */
+            .ampstart-sidebar .ampstart-dropdown-item {
+                margin-bottom: 0
+            }
+            .ampstart-nav-dropdown .ampstart-dropdown-item,
+            .ampstart-nav-dropdown amp-accordion ul,
+            .ampstart-sidebar {
+                background-color: var(--sidebar-bg);
+            }
+            .ampstart-nav-dropdown {
+                min-width: 200px
+            }
+            .ampstart-nav-dropdown amp-accordion header {
+                background-color: var(--bg);
+                border: none
+            }
+            .ampstart-nav-dropdown .ampstart-dropdown-item,
+            .ampstart-nav-dropdown .ampstart-dropdown>section>header {
+                background-color: var(--sidebar-bg);
+                color: var(--text-white);
+            }
+            .ampstart-nav-dropdown .ampstart-dropdown-item {
+                color: var(--icon);
+            }
+            .ampstart-nav-dropdown {
+                padding-bottom: .75rem
+            }
+            .ampstart-sidebar-nav>ul>li:first-child {
+                margin-bottom: 0
+            }
+            .ampstart-sidebar .ampstart-dropdown-items:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: #efe5e3
+            }
+            .ampstart-sidebar .ampstart-sidebar-nav:after {
+                content: "";
+                height: 100px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+               /* background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='39' viewBox='0 0 104 39'%3E%3Cpath fill='none' stroke='%23EFE5E3' stroke-miterlimit='10' d='M0 .5c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 5.368c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 10.236c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 15.104c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 19.972c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 24.84c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 29.708c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 34.576c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4'/%3E%3C/svg%3E") repeat-x 0 61px
+            */}
+            .ampstart-sidebar .ampstart-icon {
+                color: var(--text-color-primary);
+                fill: var(--text-color-primary);
+            }
+            .ampstart-sidebar .ampstart-social-follow,
+            .ampstart-social-follow {
+                margin: 0
+            }
+            .ampstart-social-follow>li {
+                margin-right: 0
+            }
+            .ampstart-footer .ampstart-social-follow li:last-child {
+                margin-right: 0
+            }
+            .ampstart-sidebar .ampstart-nav-item {
+                margin: 0 0 .5rem
+            }
+            .ampstart-sidebar .ampstart-nav-dropdown .ampstart-dropdown-item {
+                color: var(--text-color-primary);
+            }
+            .items-start {
+                -ms-flex-align: start;
+                align-items: flex-start
+            }
+            .ampstart-nav .ampstart-label {
+                color: inherit
+            }
+            .list-reset {
+                list-style: none;
+                padding-left: 0
+            }
+            .ampstart-label {
+                font-size: 1rem;
+                color: #4f4f4f;
+                line-height: 1.42857;
+                letter-spacing: .06rem
+            }
+            .ampstart-label {
+                text-transform: uppercase
+            }
+            .ampstart-label {
+                line-height: 2.0625
+            }
+            .relative {
+                position: relative
+            }
+            .text-decoration-none {
+                text-decoration: none
+            }
+            .inline-block {
+                display: inline-block
+            }
+            .flex-wrap {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+            }        
+            .justify-around {
+                -ms-flex-pack: distribute;
+                justify-content: space-around
+            }
+            /* Navbar */
+            /* Amp Css footer */
+            .ampstart-footer {
+                background-color: #000;
+                color: #fff;
+                font-size: .75rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                margin-top: 5rem;
+            }
+
+            .ampstart-footer .ampstart-icon {
+                fill: #fff
+            }
+
+            .ampstart-footer .ampstart-social-follow li:last-child {
+                margin-right: 0
+            }
+            .ampstart-footer .inline-block {
+                cursor: pointer;
+            }
+            .ampstart-footer-nav ul{
+                margin-bottom: 4rem;
+            }
+            .ampstart-footer-nav li {
+                display: inline-block;
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .ampstart-footer-nav > a, .copyright, .ampstart-sidebar > a {
+                color: #656565;
+            }
+            .flex-column {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+            .ampstart-footer svg {
+                padding: 0 .8rem;
+            }
+            /* body content */
+            body, html {
+                font-family: var(--font-primary);
+            }
+            .container-fluid {
+                width: 100%;
+               /* padding-left: 15px;
+                padding-right: 15px; */
+                margin-right: auto;
+                margin-left: auto
+            }
+            .bg-img {
+               /* background-image: url(images/designer-desktops.jpg); */
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100vw;
+                height: 100vh;
+                background-position: center;
+            }
+            h1 {
+                position: relative;
+                /* top: 5%; */
+                /* left: 10%; */
+                padding: .3em; 
+                font-size: calc(3.5em - 10px);
+                line-height: 1;
+                margin-bottom: -5%;
+            }
+            h1 span {
+                font-family: var(--font-primary);
+                color: var(--text-color-primary);
+                text-decoration: underline;
+            }
+            h2 {
+                position: relative;
+                /* top: 5%; */
+                font-size: 2em;
+                padding: .5em; 
+            }
+            .card {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem
+            }
+            .card {
+                position: relative;
+                top: 5%;
+            }
+            .card-body {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                padding: .25rem
+            }
+            .card-title {
+                margin-bottom: .75rem
+            }
+            .card-img {
+                width: 100%;
+                border-radius: calc(.25rem - 1px)
+            }
+            .mb-3 {
+                margin-bottom: 1rem;
+            }
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px
+            }
+            .no-gutters {
+                margin-right: 0;
+                margin-left: 0
+            }
+            .no-gutters > .col,
+            .no-gutters > [class*=col-] {
+                padding-right: 0;
+                padding-left: 0
+            }
+            .col-md-4,
+            .col-md-8 {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px
+            }
+            .col-md-4 {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%
+            }
+            .col-md-8 {
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%
+            }
+            .btn {
+                display: inline-block;
+                font-weight: 400;
+                color: #212529;
+                text-align: center;
+                vertical-align: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-color: transparent;
+                border: 1px solid transparent;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .25rem;
+                transition: color .15s ease-in-out, 
+                background-color .15s ease-in-out,
+                border-color .15s ease-in-out, 
+                box-shadow .15s ease-in-out
+            }
+            .btn-danger {
+                color: var(--bg);
+                background-color: var(--danger);
+                border-color: var(--danger);
+            }
+            .btn-danger:hover {
+                color: var(--bg);
+                background-color: var(--danger-hover);
+                border-color: var(--danger-border);
+            }
+            .btn-danger.focus,
+            .btn-danger:focus {
+                box-shadow: 0 0 0 .2rem var(--danger-shadow);
+            }
+            .btn-danger.disabled,
+            .btn-danger:disabled {
+                color: var(--bg);
+                background-color: var(--danger);
+                border-color: var(--danger);
+            }
+            .btn-danger:not(:disabled):not(.disabled).active,
+            .btn-danger:not(:disabled):not(.disabled):active,
+            .show > .btn-danger.dropdown-toggle {
+                color: var(--bg);
+                background-color: var(--danger-border);
+                border-color: var(--danger-border-sec);
+            }
+            .btn-danger:not(:disabled):not(.disabled).active:focus,
+            .btn-danger:not(:disabled):not(.disabled):active:focus,
+            .show > .btn-danger.dropdown-toggle:focus {
+                box-shadow: 0 0 0 .2rem var(--danger-shadow);
+            }
+            .bg-danger {
+                background-color: var(--danger)!important
+            }
+            a.bg-danger:focus,
+            a.bg-danger:hover,
+            button.bg-danger:focus,
+            button.bg-danger:hover {
+                background-color: var(--danger-border)!important
+            }
+            .btn-lg {
+                padding: .5rem 1rem;
+                font-size: 1.25rem;
+                line-height: 1.5;
+                border-radius: .3rem
+            }
+            .btn-btn {
+                text-decoration: none;
+            }
+            .time {
+                text-align: right;
+            }
+            .off-ads {
+                margin-top: 2.5rem;
+                padding: .5rem;
+            }
+            .text-white {
+                color: var(--text-white);
+            }
+            .text-center {
+                text-align: center;
+            }
+            .btn-oferta {
+                color: var(--text-white);
+                text-decoration: none;
+                cursor: pointer;
+            }
+                        .card-group {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+            .card-group > .card {
+                margin-bottom: 15px
+            }
+            .card-img-top {
+                width: 100%;
+                border-top-left-radius: calc(.25rem - 1px);
+                border-top-right-radius: calc(.25rem - 1px)
+            }
+
+            .card-group > .card:not(:last-child) .card-header,
+            .card-group > .card:not(:last-child) .card-img-top {
+                border-top-right-radius: 0
+            }
+            .card-group > .card:not(:first-child) .card-header,
+            .card-group > .card:not(:first-child) .card-img-top {
+                border-top-right-radius: 0
+            }
+            .service {
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 3.5rem;
+            }
+            .whatsapp_logo {
+                width: 50px;
+                position: fixed;
+                top: 80%;
+                left: calc(100vw - 50px);
+            }
+            .text-offert {
+                font-size: 2rem;
+                font-weight: bold;
+                color: var(--text-offert);
+            }
+            @media (min-width: 64.06rem) {
+                h1 {
+                    width: 70%;
+                    margin: auto;
+                }
+                h2 {
+                    width: 70%;
+                    margin: auto;
+                    font-size: 1.5em;
+                }
+                .off-ads {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            @media (min-width:576px) {
+                .card-group {
+                    -ms-flex-flow: row wrap;
+                    flex-flow: row wrap
+                }
+                .card-group > .card {
+                    -ms-flex: 1 0 0%;
+                    flex: 1 0 0%;
+                    margin-bottom: 0
+                }
+                .card-group > .card + .card {
+                    margin-left: 0;
+                    border-left: 0
+                }
+                .card-group > .card:not(:last-child) {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0
+                }
+                .card-group > .card:not(:last-child) .card-header,
+                .card-group > .card:not(:last-child) .card-img-top {
+                    border-top-right-radius: 0
+                }
+                .card-group > .card:not(:last-child) .card-footer,
+                .card-group > .card:not(:last-child) .card-img-bottom {
+                    border-bottom-right-radius: 0
+                }
+                .card-group > .card:not(:first-child) {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0
+                }
+                .card-group > .card:not(:first-child) .card-header,
+                .card-group > .card:not(:first-child) .card-img-top {
+                    border-top-left-radius: 0
+                }
+                .card-group > .card:not(:first-child) .card-footer,
+                .card-group > .card:not(:first-child) .card-img-bottom {
+                    border-bottom-left-radius: 0
+                }
+            }
+            
+        </style>
+
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    </head>
+
+    <body>
+       <!-- Start Navbar -->
+<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
+        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2">☰</div>
+        <amp-img src="images/designiumPartner-logo.png" width="30" height="30" layout="fixed"
+         class="my0 mx-auto" alt="Example logo image"></amp-img>
+    </header>
+     
+    <!-- Start Sidebar -->
+    <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
+      <div class="flex justify-start items-center ampstart-sidebar-header">
+        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+      </div>
+     
+      <nav class="ampstart-sidebar-nav ampstart-nav">
+        <ul class="list-reset m0 p0 ampstart-label">
+            <li class="ampstart-nav-item"><a href="index.html">Home</a></li>
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+            
+    <!-- Start Dropdown-inline -->
+            <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+              <section>
+                <header>Diseño Web</header>
+                <ul class="ampstart-dropdown-items list-reset m0 p0">
+                    <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Styling Tips</a></li>
+                    <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Designers</a></li>
+                </ul>
+              </section>
+            </amp-accordion>
+            
+    <!-- End Dropdown-inline -->
+          </li>
+          <li class="ampstart-nav-item"><a href="blog.html">Blog</a></li>
+          <li class="ampstart-nav-item"><a href="contact.html">Contacto</a></li>
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+            
+    <!-- Start Dropdown-inline -->
+            <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+              <section>
+                <header>Marketing Digital</header>
+                <ul class="ampstart-dropdown-items list-reset m0 p0">
+                    <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Posicionamiento web (SEO)</a></li>
+                    <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Publicidad Digital</a></li>
+                </ul>
+              </section>
+            </amp-accordion>
+            
+    <!-- End Dropdown-inline -->
+          </li>
+         <!-- <li class="ampstart-nav-item"><a href="#">Beauty</a></li>
+          <li class="ampstart-nav-item"><a href="#">Shop</a></li> -->
+        </ul>
+      </nav>
+     
+      <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+        <li class="mr2">
+            <a href="#" class="inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
+        </li>
+        <li class="mr2">
+            <a href="#" class="inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewbox="0 0 56 55"><title>Facebook</title><path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path></svg></a>
+        </li>
+        <li class="mr2">
+            <a href="#" class="inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 54 54"><title>instagram</title><path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path></svg></a>
+        </li>
+        <li class="mr2">
+            <a href="#" class="inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28.5" viewbox="0 0 43 51"><title>pinterest</title><path d="M-13.6-5c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4C13-.8 12.5.5 12 1.7c-.6 1.2-1.3 2.3-2.2 3.2C9 5.8 8 6.6 6.7 7.1c-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1C-.7-.9-1 .4-1 1.3c0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z" transform="translate(21.734 23.748)" class="ampstart-icon ampstart-icon-pinterest"></path></svg></a>
+        </li>
+        <li class="mr2">
+            <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#112;&#104;&#97;&#101;&#108;&#46;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#115;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24"
+            height="18.4" 
+            viewbox="0 0 56 43">
+            <title>email</title>
+            <path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
+        </li>
+      </ul>
+     
+      <ul class="ampstart-sidebar-faq list-reset m0">
+        <li class="ampstart-faq-item">
+          <a href="#" class="text-decoration-none">About</a>
+        </li>
+       <!-- <li class="ampstart-nav-item">
+          <a href="contact.html" class="text-decoration-none">Contact</a>
+        </li> -->
+      </ul>
+    </amp-sidebar>
+    <!-- End Sidebar -->
+    <!-- End Navbar -->
+
+    <main class="container-fluid bg-img">
+        <p class="time">Proximamente Tutoriales: 
+                <amp-timeago class="m1"
+                width="75"
+                height="22"
+                datetime="2020-01-15T00:37:33.809Z" cutoff="600">Miercoles 15 Enero 2020 00.37</amp-timeago>
+        </p>
+        
+        <h1> <span>DesigniumPartner</span> estudio de <span>Diseño web</span> y <span>Desarrollo Front-end</span>
+        </h1>
+        <h2>Trabajando para crear un producto digital intuitivo que solucione Problemas.
+            Con el diseño correcto, dirigido al público objetivo correcto, puede maximizar sus ingresos y obtener un crecimiento viral. 
+            Déjame ayudarte a obtener el mejor diseño para tus usuarios.
+        </h2>
+        <div class="mt-2" style="text-align: center;">
+            <a class="btn btn-lg btn-danger mx-auto btn-btn" href="contact.html">
+                Hablemos
+            </a>
+        </div>
+        <section class="off-ads">
+                <div class="card bg-danger text-white text-center p-3">
+                        <blockquote class="blockquote mb-0">
+                          <p>Aprovecha faltan
+                                <amp-date-countdown timestamp-seconds="1575142273"
+                                layout="fixed-height"
+                                height="20">
+                                <template type="amp-mustache">
+                                  {{d}} days, {{h}} hours, {{m}} minutes and {{s}} seconds
+                                </template>
+                              </amp-date-countdown>
+                            para que finalice. Oferta 50% Descuento Pagina Web-App 4 secciones, 
+                              dominio, hosting y hasta 5 correos personalizados</p>
+                              <span class="text-center text-offert">RD$ 17,500</span>
+                          <footer class="blockquote-footer text-white">
+                            <small>
+                              <a  href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#112;&#104;&#97;&#101;&#108;&#46;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#115;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" 
+                              class="btn btn-oferta">Contactar Via Email</a>
+                            </small>
+                          </footer>
+                        </blockquote>
+                      </div>
+        </section>   
+        <section class="service row">
+                <div class="card-group">
+                        <div class="card">
+                          <amp-img src="images/services/web-development.jpg" width="100" height="100" 
+                          layout="responsive" class="card-img-top" alt="imac displaying photo collage, Photo by Designecologist from Pexels"></amp-img>
+                          <div class="card-body">
+                            <h5 class="card-title">Desarrollo Web</h5>
+                            <p class="card-text">
+                                Utilizamos tecnologia de vanguardia tales como Angular +6, AMP, HTML5, Sass, Css3, totalmente responsivos,
+                                adaptables a todas las pantallas, para brindar a nuestros clientes lo mejor de la web.
+                            </p>
+                          </div>
+                          
+                        </div>
+                        <div class="card">
+                          <amp-img src="images/services/web-design.jpg" width="100" height="100" layout="responsive" 
+                          class="card-img-top" alt="web design Photo by Deepu B Iyer from Pexels"></amp-img>
+                          <div class="card-body">
+                            <h5 class="card-title">Diseño Web</h5>
+                            <p class="card-text">
+                                Contamos con Personal Experto en UX (Experiencia de Usuario), UI (Interfaz de Usuario) para brindar 
+                                la mejor de las experiencias en la web, con un diseño intuitivo fácil de utilizar e interpretar. 
+                            </p>
+                          </div>
+                          
+                        </div>
+                        <div class="card">
+                          <amp-img src="images/services/google-analytics.jpg" width="100" height="100" layout="responsive" class="card-img-top" 
+                          alt="google analytics Photo by Lukas from Pexels"></amp-img>
+                          <div class="card-body">
+                            <h5 class="card-title">Posicionamiento Web</h5>
+                            <p class="card-text">
+                                Somos Expertos en Posicionamiento Web y Marketing Digital, realizamos estrategias digitales para que su 
+                                negocio crezca de la forma correcta en la era digital, optimizamos su pagina web asi google y los demas buscadores
+                                reconozcan su página y se posicione en los primeros puestos de busqueda.
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+        </section>
+        <footer class="ampstart-footer flex flex-column items-center p3">
+                <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+                  <li class="mr2">
+                    <a href="#" class="inline-block" alt="Link to AMP HTML Twitter">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49">
+                        <title>Twitter</title>
+                        <path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mr2">
+                    <a href="#" class="inline-block" alt="Link to AMP HTML Facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewbox="0 0 56 55">
+                        <title>Facebook</title>
+                        <path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mr2">
+                    <a href="#" class="inline-block" alt="Link to AMP HTML pin trest">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28.5" viewbox="0 0 43 51">
+                        <title>pinterest</title>
+                        <path d="M-13.6-5c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4C13-.8 12.5.5 12 1.7c-.6 1.2-1.3 2.3-2.2 3.2C9 5.8 8 6.6 6.7 7.1c-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1C-.7-.9-1 .4-1 1.3c0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z" transform="translate(21.734 23.748)" class="ampstart-icon ampstart-icon-pinterest"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mr2">
+                    <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#112;&#104;&#97;&#101;&#108;&#46;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#115;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="inline-block" alt="Link HTML Email">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewbox="0 0 56 43">
+                        <title>email</title>
+                        <path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path>
+                      </svg>
+                    </a>
+                  </li>
+              </ul>
+                <nav class="ampstart-footer-nav">
+                  <ul class="list-reset flex flex-wrap mb3">
+                    <li class="px1">
+                      <a class="text-decoration-none ampstart-label" href="#">Nosotros</a>
+                    </li>
+                    <li class="px1">
+                      <a class="text-decoration-none ampstart-label" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="px1">
+                      <a class="text-decoration-none ampstart-label" href="#">Terms</a>
+                    </li>
+                  </ul>
+                </nav>
+                <small>© RICHBAR GENERAL SOLUTIONS, 2019</small>
+              </footer>
+
+              <!-- Whatsapp logo-->
+              <a href="https://wa.me/18494096892/?text=Estoy%20interesado%20en%20una%20pagina%20web%20escribeme">
+                <amp-img src="images/logo-whatsapp-512.png"
+                    width="100"
+                    height="100"
+                    layout="responsive"
+                    alt="Whatsapp logo"
+                    class="whatsapp_logo">
+                </amp-img>
+              </a>
+
+    </main>
+    <!-- Service worker -->
+    <amp-install-serviceworker
+      src="https://www.designiumpartner.com/serviceworker.js"
+      data-iframe-src="https://www.designiumpartner.com/install-serviceworker.html"
+      layout="nodisplay">
+    </amp-install-serviceworker>
+
+    <!-- Default Statcounter code for Designiumpartner.com
+http://designiumpartner.com -->
+<script async type="text/javascript">
+    var sc_project=12092206;
+    var sc_invisible=1;
+    var sc_security="94fa071a";
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12092206/0/94fa071a/1/"
+    alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+    </body>
+</html>
+
+

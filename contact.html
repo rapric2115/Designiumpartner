@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Contacto | DesigniumPartner</title>
+    <meta description="DesigniumPartner trabajamos en brindarle lo mejor de la web para su negocio.">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/designiumPartner-logo.png" width="30" height="30" class="d-inline-block align-top" alt="DesigniumPartner logo">
+                DesigniumPartner
+            </a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </nav>
+    <main class="container">
+        <h2 class="text-center">
+            Estamos trabanjando para brindarle un servicio excelente..
+        </h2>
+        <h4 class="text-center">
+            Actualmente nuestro formulario de contacto esta en proceso de estudio en Experiencia de Usuario (UX) y 
+            interfaz de Usuario (UI). si desea comunicarse con nosotros puede hacerlo via <b>Mail</b> a traves de este 
+            link <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#112;&#104;&#97;&#101;&#108;&#46;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#115;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Enviar Correo</a> o escribanos por 
+            <a href="https://wa.me/18494096892/?text=Estoy%20interesado%20en%20una%20pagina%20web%20escribeme">Whatsapp</a> 
+        </h4>
+            <!-- Feedback Form Starts Here -->
+            <!--<form class="contact-inner well" id="cont" name="contact">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-text" > Nombre</label>
+                                <input type="text" class="form-control" placeholder="Tu Nombre" id="n" name="n">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-text"> Email</label>
+                                <input type="text" class="form-control" placeholder="CorreoElectronico" id="e" name="e">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-text" > Tema</label>
+                                <input type="text" class="form-control" placeholder="Tema" id="t" name="Asunto">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <label class="form-text"> Mensaje</label>
+                                <textarea id="Mensaje" cols="30" rows="8" class="form-control" 
+                                placeholder="Escribe tu mensaje aqui" name="mensaje"></textarea>
+                            </div>
+                            <span class="text-danger" id="error_messahe"></span>
+                            <span class="text-success" id="success-message"></span>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-default form-text" data-type="submit" id="btn" onclick="sendMail(); return false">Enviar Solicitud</button>
+                        </div>
+                        
+                        <div id="success">
+                            <span class="text-success text-center">
+                                Su Correo ha sido enviado Satisfactoriamente.
+                            </span>
+                        </div>
+                        <div id="error">
+                            <span class="text-danger text-center">
+                                Surgio un Error en el Envio, Por Favor intente mas tarde.
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                </form>-->
+             
+            <!--<form name="contactform" method="post" action="mail.php">
+                    <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="first_name" class="form-control" id="name" placeholder="John Doe">
+                          </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" >
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Seleccione</label>
+                      <select class="form-control" id="exampleFormControlSelect1" name="select">
+                        <option>Diseño Web</option>
+                        <option>Desarrollo Web</option>
+                        <option>Marketing Digital</option>
+                        <option>Posicionamiento Web (SEO)</option>
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Message">Mesaje</label>
+                      <textarea class="form-control" id="message" rows="3" name="mps-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>-->
+
+    </main>
+
+    <!--<script>
+            $(function()
+            {
+                function after_form_submitted(data)
+                {
+                    if(data.result == 'success')
+                    {
+                        $('form#reused_form').hide();
+                        $('#success_message').show();
+                        $('#error_message').hide();
+                    }
+                    else
+                    {
+                        $('#error_message').append('<ul></ul>');
+            
+                        jQuery.each(data.errors,function(key,val)
+                        {
+                            $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+                        });
+                        $('#success_message').hide();
+                        $('#error_message').show();
+            
+                        //reverse the response on the button
+                        $('button[type="button"]', $form).each(function()
+                        {
+                            $btn = $(this);
+                            label = $btn.prop('orig_label');
+                            if(label)
+                            {
+                                $btn.prop('type','submit' );
+                                $btn.text(label);
+                                $btn.prop('orig_label','');
+                            }
+                        });
+            
+                    }//else
+                }
+            
+                $('#reused_form').submit(function(e)
+                  {
+                    e.preventDefault();
+            
+                    $form = $(this);
+                    //show some response on the button
+                    $('button[type="submit"]', $form).each(function()
+                    {
+                        $btn = $(this);
+                        $btn.prop('type','button' );
+                        $btn.prop('orig_label',$btn.text());
+                        $btn.text('Sending ...');
+                    });
+            
+            
+                                $.ajax({
+                            type: "POST",
+                            url: 'mail.php',
+                            data: $form.serialize(),
+                            success: after_form_submitted,
+                            dataType: 'json'
+                        });
+            
+                  });
+            });
+            </script>-->
+            <!--<script>
+                function sendMail() {
+                    var link = "mailto:raphael.richardson@gmail.com"
+                            + "?cc=raphael.richardson@gmail.com"
+                            + "&subject=" + escape("This is my subject")
+                            + "&body=" + escape(document.getElementById('Mensaje').value)
+                            + "&body=" + escape(document.getElementById('n').value)
+                            + "&body=" + escape(document.getElementById('e').value)
+                            + "&body=" + escape(document.getElementById('t').value)
+                    ;
+
+                    window.location.href = link;
+                }
+            </script>-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
